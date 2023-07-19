@@ -16,8 +16,11 @@ repositories {
 }
 
 dependencies {
+//    annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+//    implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("io.micronaut:micronaut-jackson-databind")
     implementation("io.micronaut.problem:micronaut-problem-json")
+
     runtimeOnly("ch.qos.logback:logback-classic")
     testImplementation("io.micronaut:micronaut-http-client")
 }
@@ -34,7 +37,7 @@ java {
 graalvmNative.toolchainDetection.set(false)
 micronaut {
     runtime("netty")
-    testRuntime("spock2")
+    testRuntime("junit5")
     processing {
         incremental(true)
         annotations("com.example.*")
