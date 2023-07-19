@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.example
+testFramework: spock
+sourceLanguage: java
+buildTool: gradle_kotlin
+features: [app-name, gradle, http-client-test, jackson-databind, java, java-application, logback, micronaut-aot, micronaut-build, netty-server, problem-json, properties, readme, shade, spock]
